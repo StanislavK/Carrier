@@ -51,6 +51,6 @@ extension CarrierInfoViewController: CarrierDelegate {
         mobileNetworkCodeLabel.text = carrier.carrierMobileNetworkCode ?? "--"
         allowsVOIPLabel.text = carrier.carrierAllowsVOIP ? "Yes": "No"
         radioTypeLabel.text = carrier.carrierRadioAccessTechnologyType ?? "--"
-        networkGenerationLabel.text = carrier.carrierNetworkGeneratation ?? "--"
+        networkGenerationLabel.text = carrier.carrierNetworkGeneration ?? "--"
     }
 }
