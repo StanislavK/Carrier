@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/Carrier.svg?style=flat)](http://cocoapods.org/pods/Carrier)
 [![Platform](https://img.shields.io/cocoapods/p/Carrier.svg?style=flat)](http://cocoapods.org/pods/Carrier)
 
+<p align="center">
+  <img src="https://github.com/StanislavK/Carrier/blob/master/Github%20Resources/Screen%20Shot%202017-09-06%20at%2012.35.48.png" width="350"/>
+</p>
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
