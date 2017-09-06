@@ -22,7 +22,7 @@ pod 'Carrier'
 
 ## Author
 
-StanislavK, stanislav.kasprik@gmail.com
+StanislavK, @StanislavK
 
 ## License
 
