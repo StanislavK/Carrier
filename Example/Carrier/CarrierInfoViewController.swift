@@ -10,9 +10,9 @@ import UIKit
 import Carrier
 
 class CarrierInfoViewController: UITableViewController {
-    
+
     // MARK: - IB Outlets
-    
+
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var countryCodeLabel: UILabel!
     @IBOutlet weak var mobileCountryCodeLabel: UILabel!
@@ -20,30 +20,30 @@ class CarrierInfoViewController: UITableViewController {
     @IBOutlet weak var allowsVOIPLabel: UILabel!
     @IBOutlet weak var radioTypeLabel: UILabel!
     @IBOutlet weak var networkGenerationLabel: UILabel!
-    
+
     // MARK: - Private Properties
-    
+
     fileprivate let carrier = Carrier()
-    
+
     // MARK: - View Life-Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         title = "Carrier info - Example"
         carrier.delegate = self
-        
+
         updateLabels(with: carrier)
     }
 }
 
 extension CarrierInfoViewController: CarrierDelegate {
-    
+
     func carrierRadioAccessTechnologyDidChange() {
         print(#function)
         updateLabels(with: carrier)
     }
-    
+
     func updateLabels(with carrier: Carrier) {
         nameLabel.text = carrier.carrierName ?? "--"
         countryCodeLabel.text = carrier.carrierIsoCountryCode ?? "--"
