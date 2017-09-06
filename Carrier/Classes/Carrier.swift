@@ -83,7 +83,7 @@ final public class Carrier {
     }
     
     // Returns carrier network generation based on radio accesss technology type.
-    public var carrierNetworkGeneratation: String? {
+    public var carrierNetworkGeneration: String? {
         
         enum ShortRadioAccessTechnologyList: String {
             case gprs = "GPRS"
@@ -117,7 +117,7 @@ final public class Carrier {
             "carrierMobileNetworkCode": carrierMobileNetworkCode,
             "carrierAllowsVOIP": carrierAllowsVOIP,
             "carrierRadioAccessTechnologyType": carrierRadioAccessTechnologyType,
-            "carrierNetworkGeneratation": carrierNetworkGeneratation,
+            "carrierNetworkGeneration": carrierNetworkGeneration,
         ]
     }
 }
