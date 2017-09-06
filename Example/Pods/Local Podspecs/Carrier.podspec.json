@@ -1,0 +1,22 @@
+{
+  "name": "Carrier",
+  "version": "0.1.0",
+  "summary": "Simple Swift wrapper on CoreTelephony framework.",
+  "description": "Simple Swift wrapper on CoreTelephony framework.",
+  "homepage": "https://github.com/StanislavK/Carrier",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "StanislavK": "stanislav.kasprik@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/StanislavK/Carrier.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.3"
+  },
+  "source_files": "Carrier/Classes/**/*"
+}

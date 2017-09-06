@@ -1,0 +1,6 @@
+framework module Carrier {
+  umbrella header "Carrier-umbrella.h"
+
+  export *
+  module * { export * }
+}

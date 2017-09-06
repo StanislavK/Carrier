@@ -1,14 +1,15 @@
 use_frameworks!
+platform :ios, '10.3'
 
 target 'Carrier_Example' do
   pod 'Carrier', :path => '../'
 
-  target 'Carrier_Tests' do
-    inherit! :search_paths
+#target 'Carrier_Tests' do
+#inherit! :search_paths
 
-    pod 'Quick', '~> 1.0.0'
-  pod 'Nimble', '~> 5.1.1'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
-  end
+#pod 'Quick', '~> 1.0.0'
+#pod 'Nimble', '~> 5.1.1'
+#pod 'FBSnapshotTestCase'
+#pod 'Nimble-Snapshots'
+#end
 end
