@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'Simple Swift wrapper on CoreTelephony framework.'
   s.description      = <<-DESC
 
-  Simple Swift wrapper on CoreTelephony framework.
+  This is a simple Swift wrapper on CoreTelephony framework. Please see example for a usage.
 
                         DESC
 
