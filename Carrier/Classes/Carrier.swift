@@ -69,14 +69,14 @@ final public class Carrier {
 
     /// Returns current radio access technology type used (GPRS, Edge, LTC, etc.) with the carrier.
     public var carrierRadioAccessTechnologyType: String? {
-        var radioType = networkInfo.currentRadioAccessTechnology
         let prefix = "CTRadioAccessTechnology"
-        if radioType == nil {
+        guard let currentTechnology = networkInfo.currentRadioAccessTechnology else {
             return nil
-        } else if radioType!.hasPrefix(prefix) {
-            radioType = (radioType! as NSString).substring(from: prefix.characters.count)
         }
-        return radioType
+        guard currentTechnology.hasPrefix(prefix) else {
+            return currentTechnology
+        }
+        return String(currentTechnology.dropFirst(prefix.count))
     }
 
     // Returns carrier network generation based on radio accesss technology type.
